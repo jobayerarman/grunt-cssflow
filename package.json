@@ -24,6 +24,7 @@
   "engines": {
     "node": ">= 0.8.0"
   },
+  "main": "tasks/less.js",
   "scripts": {
     "test": "grunt test"
   },
@@ -42,5 +43,8 @@
   },
   "keywords": [
     "gruntplugin"
+  ],
+  "files": [
+    "tasks"
   ]
 }
