@@ -59,12 +59,12 @@ module.exports = function(grunt) {
             // add destination override
             dests[f.dest] = f.dest;
             mins[f.dest.replace(new RegExp(suffix + '$'),'min.' + suffix)] = f.dest;
-                     
+
         });
 
         // Preprocess
         grunt.config(options.preprocessor, {
-            options: options[options.preprocessor],            
+            options: options[options.preprocessor],
             inator: {
                 files: this.data.files
             }
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
         grunt.log.writeln('=============================================='['rainbow']);
         grunt.log.ok('Pre-processor: ' + options.preprocessor);
         grunt.log.ok('Prefixing:     ' + prefix);
-        grunt.log.ok('Minfiy:        Always');
+        grunt.log.ok('Minify:        Always');
         grunt.log.writeln('=============================================='['rainbow']);
 
         grunt.task.run([options.preprocessor, 'autoprefixer', 'cssmin']);
