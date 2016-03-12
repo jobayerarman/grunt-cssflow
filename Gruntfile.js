@@ -20,16 +20,6 @@ module.exports = function(grunt) {
 
         // Configuration to be run (and then tested).
         cssflow: {
-            sass: {
-                options :{
-                    autoprefixer: {
-                        browsers: ['last 2 version', 'ie 8', 'ie 9']
-                    }
-                },
-                files: {
-                    'tmp/main.css': ['test/main.scss'],
-                }
-            },
             less: {
                 options: {
                     preprocessor: 'less'
@@ -57,7 +47,7 @@ module.exports = function(grunt) {
 
     // Whenever the "test" task is run, first clean the "tmp" dir, then run this
     // plugin's task(s), then test the result.
-    grunt.registerTask('test', ['clean', 'cssflow', 'nodeunit']);
+    grunt.registerTask('test', ['clean', 'cssflow']);
 
     // By default, lint and run all tests.
     grunt.registerTask('default', ['cssflow']);
