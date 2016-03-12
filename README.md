@@ -1,7 +1,7 @@
 # grunt-cssflow
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-[![Build Status](https://travis-ci.org/jobayerarman/grunt-cssflow.svg?branch=master)](https://travis-ci.org/jobayerarman/grunt-cssflow)
+[![Build Status](https://travis-ci.org/jobayerarman/grunt-cssflow.svg?branch=build-test)](https://travis-ci.org/jobayerarman/grunt-cssflow)
 [![Dependency Status](https://david-dm.org/allanhortle/grunt-cssflow.svg)](https://david-dm.org/allanhortle/grunt-cssflow)
 [![devDependency Status](https://david-dm.org/allanhortle/grunt-cssflow/dev-status.svg)](https://david-dm.org/allanhortle/grunt-cssflow#info=devDependencies)
 
@@ -44,14 +44,9 @@ grunt.initConfig({
 
 #### options.preprocessor
 Type: `String`
-Default value: `sass`
+Default value: `less`
 
 A string value that is used to do determine the preprocessor
-
-#### options.sass
-Type: `Object`
-
-Pass in any custom Sass configurations
 
 #### options.less
 Type: `Object`
@@ -70,19 +65,6 @@ Pass in any custom cssmin configurations
 
 
 ### Usage Examples
-
-#### Default Configuration
-```js
-grunt.initConfig({
-  cssflow: {
-    your_target: {
-      files: {
-        'css/main.css': 'sass/main.scss'
-      }
-    }
-  }
-});
-```
 
 #### Less Configuration
 ```js
