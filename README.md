@@ -1,6 +1,7 @@
 # grunt-cssflow
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+[![Build Status](https://travis-ci.org/jobayerarman/grunt-cssflow.svg?branch=master)](https://travis-ci.org/jobayerarman/grunt-cssflow)
 [![Dependency Status](https://david-dm.org/allanhortle/grunt-cssflow.svg)](https://david-dm.org/allanhortle/grunt-cssflow)
 [![devDependency Status](https://david-dm.org/allanhortle/grunt-cssflow/dev-status.svg)](https://david-dm.org/allanhortle/grunt-cssflow#info=devDependencies)
 
