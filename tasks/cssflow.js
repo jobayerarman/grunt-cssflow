@@ -13,19 +13,18 @@ var _ = require('lodash');
 module.exports = function(grunt) {
 
     var options;
-    var cwd = process.cwd();
+    // var cwd = process.cwd();
 
     // Loading cssflow's dir on account of grunt failing at submodule loading
-    process.chdir('node_modules/grunt-cssflow/');
+    // process.chdir('node_modules/grunt-cssflow/');
 
     // Load the tasks
-    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
 
     // Back to current dir
-    process.chdir(cwd);
+    // process.chdir(cwd);
 
 
     grunt.registerMultiTask('cssflow', 'Combination pre-process, auto-prefix, minify.', function() {
@@ -34,26 +33,14 @@ module.exports = function(grunt) {
         var mins = {};
 
         options = this.options({
-            preprocessor: 'sass',
-            sass: {},
+            preprocessor: 'less',
             less: {},
             autoprefixer: {},
             cssmin: {}
         });
 
 
-
         this.files.forEach(function(f) {
-            // var src = f.src.filter(function(filepath) {
-            //     // Warn on and remove invalid source files (if nonull was set).
-            //     if (!grunt.file.exists(filepath)) {
-            //         grunt.log.warn('Source file "' + filepath + '" not found.');
-            //         return false;
-            //     } else {
-            //         return true;
-            //     }
-            // });
-
 
             var suffix = f.dest.split('.').pop();
             // add destination override
@@ -86,8 +73,6 @@ module.exports = function(grunt) {
             }
         });
 
-
-
         var prefix = options.autoprefixer.browsers || 'default';
 
         grunt.log.subhead('=============================================='['rainbow']);
@@ -101,5 +86,4 @@ module.exports = function(grunt) {
         grunt.task.run([options.preprocessor, 'autoprefixer', 'cssmin']);
 
     });
-
 };
