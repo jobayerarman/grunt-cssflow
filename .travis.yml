@@ -7,6 +7,8 @@ node_js:
 install:
   - npm install grunt-cli -g
   - npm install
+before_script:
+  - grunt test
 matrix:
   fast_finish: true
 notifications:
