@@ -2,8 +2,8 @@
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 [![Build Status](https://travis-ci.org/jobayerarman/grunt-cssflow.svg?branch=build-test)](https://travis-ci.org/jobayerarman/grunt-cssflow)
-[![Dependency Status](https://david-dm.org/jobayerarman/grunt-cssflow.svg)](https://david-dm.org/allanhortle/grunt-cssflow)
-[![devDependency Status](https://david-dm.org/jobayerarman/grunt-cssflow.svg)](https://david-dm.org/allanhortle/grunt-cssflow#info=devDependencies)
+[![Dependency Status](https://david-dm.org/jobayerarman/grunt-cssflow.svg)](https://david-dm.org/jobayerarman/grunt-cssflow)
+[![devDependency Status](https://david-dm.org/jobayerarman/grunt-cssflow.svg)](https://david-dm.org/jobayerarman/grunt-cssflow#info=devDependencies)
 
 > Combination pre-process, auto-prefix, minify.
 
